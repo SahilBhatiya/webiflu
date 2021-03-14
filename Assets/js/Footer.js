@@ -4,5 +4,5 @@ function ShowFooterData() {
     var CrrDate = new Date();
     var CrrYear = CrrDate.getFullYear();
 
-    footer.innerHTML = "© " + CrrYear + " <a href='webiflu.com' class='smooth-transition-normal'>Webiflu</a>, All Rights Reserved";
+    footer.innerHTML = "© " + CrrYear + " <a href='https://webiflu.com/' class='smooth-transition-normal'>Webiflu</a>, All Rights Reserved";
 }
