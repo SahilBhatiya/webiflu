@@ -1,0 +1,249 @@
+/* Common Variables */
+
+:root {
+    --Dark-Color: #2c2c2c;
+    --Primary-Color: #0061ff;
+}
+
+::-webkit-scrollbar {
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+    width: 10px;
+    background: 0 0
+}
+
+::-webkit-scrollbar-track {
+    background: 0 0
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d0d0d0;
+    border-radius: 5px
+}
+
+body {
+    color: var(--Dark-Color);
+    overflow-x: hidden;
+}
+
+a,
+a:hover,
+input,
+input:active,
+input:hover,
+textarea,
+textarea:active,
+textarea:hover {
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+::selection {
+    color: white;
+    background: var(--Primary-Color);
+}
+
+.simple-shadow {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.05) 0px 50px 150px -20px, rgba(0, 0, 0, 0.2) 0px 30px 60px -30px;
+}
+
+.dark-shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.curve-10 {
+    border-radius: 20px;
+}
+
+.curve-20 {
+    border-radius: 20px;
+}
+
+.curve-30 {
+    border-radius: 30px;
+}
+
+.curve-40 {
+    border-radius: 40px;
+}
+
+.curve-50 {
+    border-radius: 50px;
+}
+
+.curve-50per {
+    border-radius: 50%;
+}
+
+.curve-100 {
+    border-radius: 100px;
+}
+
+.Contact-Us {
+    min-height: 100%;
+    margin-bottom: 150px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-color: #efefef;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+/* Smooth Transition */
+
+.smooth-transition-fast {
+    -webkit-transition: all .2s ease 0s;
+    -moz-transition: all .2s ease 0s;
+    -o-transition: all .2s ease 0s;
+    transition: all .2s ease 0s;
+}
+
+.smooth-transition-normal {
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+
+.smooth-transition-slow {
+    -webkit-transition: all .7s ease 0s;
+    -moz-transition: all .7s ease 0s;
+    -o-transition: all .7s ease 0s;
+    transition: all .7s ease 0s;
+}
+
+.flip-effect:hover {
+    transform: rotateY(180deg);
+}
+
+
+/* Footer */
+
+.wave_section {
+    z-index: 1;
+    position: relative;
+    width: 110%;
+    height: 19vh;
+    background-color: transparent;
+    overflow: hidden!important;
+    margin: 0px;
+    bottom: 0px;
+}
+
+.wave_section .wave {
+    margin: 0px;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 100%;
+    height: 129px;
+    background: url("../Images/Svg/Wave.svg");
+    background-size: 1000px 129px;
+    overflow-x: hidden;
+}
+
+.wave_section .wave.wave1 {
+    animation: animateWave 20s linear infinite;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: -15px!important;
+}
+
+.wave_section .wave.wave2 {
+    animation: animateWave2 7s linear infinite;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: -5px!important;
+}
+
+.wave_section .wave.wave3 {
+    animation: animateWave 10s linear infinite;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 0px!important;
+}
+
+.wave_section .wave.wave4 {
+    animation: animateWave2 7s linear infinite;
+    opacity: 0.7;
+    animation-delay: -10s;
+    bottom: 5px!important;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animateWave2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+.social-media {
+    background-color: white;
+    position: relative;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.social-media svg {
+    fill: var(--Primary-Color);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+    background-color: var(--Primary-Color);
+    color: white;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.Bottom-Foter {
+    padding: 20px 0px;
+    padding-top: 70px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--Primary-Color);
+}
+
+.Bottom-Foter div a:hover {
+    color: var(--Dark-Color);
+}
+
+.letter-spacing-10 {
+    letter-spacing: 2px;
+}
+
+.line-height-1 {
+    line-height: 1.7rem;
+}
+
+.footer-list ul li {
+    color: #efefef;
+    font-size: 1rem;
+    line-height: 2rem;
+}
